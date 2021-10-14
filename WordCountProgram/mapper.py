@@ -9,10 +9,8 @@ for line in sys.stdin:
 	# split the line into words
 	words = line.split() #['The', 'Apache'......]
 
-	# we are looping over the words array and printing the word
-	# with the count of 1 to the STDOUT
+	# Iterating to every words in list
 	for word in words:
-		# write the results to STDOUT (standard output);
-		# what we output here will be the input for the
-		# Reduce step, i.e. the input for sort and reducer.py
+	# Printing the key value pairs.
+	# Key is word and value is count which is always 1.
 		print ('%s\t%s' % (word, 1))
